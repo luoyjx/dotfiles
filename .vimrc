@@ -29,7 +29,6 @@ Plug 'mxw/vim-jsx'
 
 Plug 'wakatime/vim-wakatime'
 Plug 'mhartington/oceanic-next' " theme
-Plug 'Yggdroot/indentLine'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
