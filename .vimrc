@@ -2,7 +2,7 @@
 " ======================================
 " Vimrc for Web Developers
 " author: walnutzhang  https://github.com/walnutzhang
-" version: 1.1, 2016-10-20
+" version: 1.2, 2017-6
 " =======================================
 
 " ======================================
@@ -15,18 +15,17 @@ Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'mileszs/ack.vim'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim', {'for': ['html', 'css']}
-Plug 'ternjs/tern_for_vim', {'for': 'javascript'}
+" Plug 'ternjs/tern_for_vim', {'for': 'javascript'}
 Plug 'othree/yajs.vim', {'for': 'javascript'}
 Plug 'othree/es.next.syntax.vim', {'for': 'javascript'}
 Plug 'othree/javascript-libraries-syntax.vim', {'for': 'javascript'}
 Plug 'elzr/vim-json', {'for': 'json'}
 Plug 'mxw/vim-jsx'
-
+" plug 'vim-syntastic/syntastic'
 Plug 'wakatime/vim-wakatime'
 Plug 'mhartington/oceanic-next' " theme
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -93,7 +92,7 @@ vmap > >gv
 
 " Ack and Ag
 let g:ackprg = 'ag --nogroup --nocolor --column'
-
+map <S-f> :Ack!<Space>
 " Emmet 
 let g:user_emmet_leader_key='<C-E>'
 let g:user_emmet_mode='a'
